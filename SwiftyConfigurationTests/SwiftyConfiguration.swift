@@ -12,13 +12,15 @@ import XCTest
 private extension Keys {
     
     static let string = Key<String>("string")
+    static let url    = Key<NSURL>("url")
+    static let number = Key<NSNumber>("number")
     static let int    = Key<Int>("int")
     static let float  = Key<Float>("float")
     static let double = Key<Double>("double")
     static let date   = Key<NSDate>("date")
     static let bool   = Key<Bool>("bool")
     
-    static let array      = Key<Array<NSObject>>("array")
+    static let array      = Key<Array<AnyObject>>("array")
     static let innerInt   = Key<Int>("array.0")
     static let innerArray = Key<String>("array.1.0")
     
@@ -45,6 +47,8 @@ class SwiftyConfigurationTests: XCTestCase {
         let config = Configuration(plistPath: plistPath)!
         
         XCTAssertTrue("hoge" == config.get(.string)!)
+        XCTAssertTrue(NSURL(string: "https://github.com/ykyouhei/SwiftyConfiguration")! == config.get(.url)!)
+        XCTAssertTrue(NSNumber(int: 0) == config.get(.number)!)
         XCTAssertTrue(1 == config.get(.int)!)
         XCTAssertTrue(1.1 == config.get(.float)!)
         XCTAssertTrue(3.14 == config.get(.double)!)

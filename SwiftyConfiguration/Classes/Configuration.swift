@@ -11,6 +11,7 @@ import Foundation
 public protocol PlistValueType {}
 
 extension String: PlistValueType {}
+extension NSURL: PlistValueType {}
 extension NSNumber: PlistValueType {}
 extension Int: PlistValueType {}
 extension Float: PlistValueType {}
@@ -21,9 +22,12 @@ extension NSData: PlistValueType {}
 extension Array: PlistValueType {}
 extension Dictionary: PlistValueType {}
 
+/// Extend this class and add your plist keys as static constants
+/// so you can use the shortcut dot notation (e.g. ` configuration.get(.yourKey)`)
+
 public class Keys {}
 
-public class Key<ValueType: PlistValueType>: Keys {
+public final class Key<ValueType: PlistValueType>: Keys {
     
     public let key: String
     

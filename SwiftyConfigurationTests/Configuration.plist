@@ -2,6 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>string</key>
+	<string>hoge</string>
+	<key>url</key>
+	<string>https://github.com/ykyouhei/SwiftyConfiguration</string>
+	<key>number</key>
+	<integer>0</integer>
+	<key>int</key>
+	<integer>1</integer>
+	<key>float</key>
+	<real>1.1</real>
+	<key>double</key>
+	<string>3.14</string>
+	<key>bool</key>
+	<true/>
+	<key>date</key>
+	<date>1970-01-01T00:00:00Z</date>
 	<key>dictionary</key>
 	<dict>
 		<key>innerString</key>
@@ -14,17 +30,5 @@
 			<string>array.1.0</string>
 		</array>
 	</array>
-	<key>string</key>
-	<string>hoge</string>
-	<key>int</key>
-	<integer>1</integer>
-	<key>float</key>
-	<real>1.1</real>
-	<key>double</key>
-	<string>3.14</string>
-	<key>bool</key>
-	<true/>
-	<key>date</key>
-	<date>1970-01-01T00:00:00Z</date>
 </dict>
 </plist>

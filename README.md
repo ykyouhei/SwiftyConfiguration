@@ -4,7 +4,7 @@
 [![Pod Version](http://img.shields.io/cocoapods/v/SwiftyConfiguration.svg?style=flat)](http://cocoadocs.org/docsets/SwiftyConfiguration/)
 [![Pod Platform](http://img.shields.io/cocoapods/p/SwiftyConfiguration.svg?style=flat)](http://cocoadocs.org/docsets/SwiftyConfiguration/)
 [![Pod License](http://img.shields.io/cocoapods/l/SwiftyConfiguration.svg?style=flat)](https://github.com/ykyohei/SwiftyConfiguration/blob/master/LICENSE)
-![Swift version](https://img.shields.io/badge/swift-2.2-orange.svg)
+![Swift version](https://img.shields.io/badge/swift-3.0-orange.svg)
 
 SwiftyConfiguration is modern Swift API for Plist.
 

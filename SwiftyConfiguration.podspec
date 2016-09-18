@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SwiftyConfiguration"
-  s.version      = "1.0.0"
+  s.version      = "2.0.0"
   s.summary      = "SwiftyConfiguration is modern Swift API for Plist."
   s.homepage     = "https://github.com/ykyouhei/SwiftyConfiguration"
   s.license      = "MIT"
